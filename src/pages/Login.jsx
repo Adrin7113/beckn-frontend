@@ -1,13 +1,22 @@
 import { useState } from "react";
+import { useLogin } from "../../hooks/useLogin";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [credentials, setCredentials] = useState({
     email: "",
     password: "",
   });
-  const handleSubmit = (e) => {
+  const navigate = useNavigate();
+  const { login, error, isLoading } = useLogin();
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(credentials);
+    await login(credentials.email, credentials.password);
+    if (error) {
+      console.log(error);
+    } else {
+      navigate("/");
+    }
   };
   return (
     <div className="max-w-screen h-screen flex justify-center items-center">

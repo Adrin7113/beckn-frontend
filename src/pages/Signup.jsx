@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSignup } from "../../hooks/useSignup";
 
 const Signup = () => {
   const [credentials, setCredentials] = useState({
@@ -6,10 +7,12 @@ const Signup = () => {
     email: "",
     password: "",
   });
+  const { signup, error, isLoading } = useSignup();
   const [modeSelect, setModeSelect] = useState("Job Seekers");
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(credentials);
+    await signup(credentials.username, credentials.email, credentials.password);
   };
   return (
     <div className="max-w-screen h-screen flex">
@@ -41,10 +44,7 @@ const Signup = () => {
             Recruiters
           </button>
         </div>
-        <form
-          onSubmit={handleSubmit}
-          className="w-[450px] flex flex-col gap-3 mono"
-        >
+        <form className="w-[450px] flex flex-col gap-3 mono">
           <h1 className="text-left">Username</h1>
           <div className="w-full relative">
             <input
@@ -52,7 +52,7 @@ const Signup = () => {
               onChange={(e) =>
                 setCredentials({ ...credentials, username: e.target.value })
               }
-              placeholder="Enter you email."
+              placeholder="Enter you username."
               className="focus:outline-none w-full h-[50px] p-5 pl-16 rounded-full bg-[#E3E3E3]"
             />
             <img
@@ -97,7 +97,10 @@ const Signup = () => {
             <input type="checkbox" className=" accent-[#D21D25CC]" />
             <h1 className="text-md font-medium mono">Remember Me</h1>
           </div>
-          <button className="w-full h-[50px] bg-[#D21D25CC] text-white font-medium rounded-full mono">
+          <button
+            onClick={handleSubmit}
+            className="w-full h-[50px] bg-[#D21D25CC] text-white font-medium rounded-full mono"
+          >
             SignUp
           </button>
         </form>
