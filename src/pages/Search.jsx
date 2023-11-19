@@ -7,218 +7,275 @@ const Search = () => {
 
   const [jobSeekers, setJobSeekers] = useState([
     {
-      id: 1,
-      name: "Adrin Jose C T",
-      image:
-        "https://media.licdn.com/dms/image/D5603AQHyWlv_2MTKBg/profile-displayphoto-shrink_800_800/0/1699649502236?e=1705536000&v=beta&t=aVuxo3G7UT3sFgqGJ71Wk8YtgTZfef4vdc-Lk5wSZNk",
-      role: "Full Stack Web Dev",
-      expertise: [
-        "Frontend Dev",
-        "Backend Dev",
-        "Project Manager",
-        "Database Engineer",
-      ],
-      karma: 3000,
-      links: 389,
-      mail: "adrin7113@gmail.com",
+      id: "1224",
+      descriptor: {
+        name: "Mayank Bansal",
+        short_desc:
+          "Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ",
+        long_desc:
+          "Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.",
+        media: [
+          {
+            mimetype: "application/pdf",
+            url: "https://www.resume-link.com",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/1",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/2",
+          },
+        ],
+        images: [
+          {
+            url: "https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4",
+          },
+        ],
+      },
     },
     {
-      id: 2,
-      name: "Adrin Jose C T 2",
-      image:
-        "https://media.licdn.com/dms/image/D5603AQHyWlv_2MTKBg/profile-displayphoto-shrink_800_800/0/1699649502236?e=1705536000&v=beta&t=aVuxo3G7UT3sFgqGJ71Wk8YtgTZfef4vdc-Lk5wSZNk",
-      role: "Full Stack Web Dev",
-      expertise: [
-        "Frontend Dev",
-        "Backend Dev",
-        "Project Manager",
-        "Database Engineer",
-      ],
-      karma: 4000,
-      links: 389,
-      mail: "adrin7113@gmail.com",
+      id: "1224",
+      descriptor: {
+        name: "Mayank Bansal 2",
+        short_desc:
+          "Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ",
+        long_desc:
+          "Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.",
+        media: [
+          {
+            mimetype: "application/pdf",
+            url: "https://www.resume-link.com",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/1",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/2",
+          },
+        ],
+        images: [
+          {
+            url: "https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4",
+          },
+        ],
+      },
     },
     {
-      id: 3,
-      name: "Adrin Jose C T 3",
-      image:
-        "https://media.licdn.com/dms/image/D5603AQHyWlv_2MTKBg/profile-displayphoto-shrink_800_800/0/1699649502236?e=1705536000&v=beta&t=aVuxo3G7UT3sFgqGJ71Wk8YtgTZfef4vdc-Lk5wSZNk",
-      role: "Full Stack Web Dev",
-      expertise: [
-        "Frontend Dev",
-        "Backend Dev",
-        "Project Manager",
-        "Database Engineer",
-      ],
-      karma: 5000,
-      links: 389,
-      mail: "adrin7113@gmail.com",
+      id: "1224",
+      descriptor: {
+        name: "Mayank Bansal 3",
+        short_desc:
+          "Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ",
+        long_desc:
+          "Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.",
+        media: [
+          {
+            mimetype: "application/pdf",
+            url: "https://www.resume-link.com",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/1",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/2",
+          },
+        ],
+        images: [
+          {
+            url: "https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4",
+          },
+        ],
+      },
     },
     {
-      id: 4,
-      name: "Adrin Jose C T 4",
-      image:
-        "https://media.licdn.com/dms/image/D5603AQHyWlv_2MTKBg/profile-displayphoto-shrink_800_800/0/1699649502236?e=1705536000&v=beta&t=aVuxo3G7UT3sFgqGJ71Wk8YtgTZfef4vdc-Lk5wSZNk",
-      role: "Full Stack Web Dev",
-      expertise: [
-        "Frontend Dev",
-        "Backend Dev",
-        "Project Manager",
-        "Database Engineer",
-      ],
-      karma: 6000,
-      links: 389,
-      mail: "adrin7113@gmail.com",
-    },
-    {
-      id: 5,
-      name: "Adrin Jose C T 5",
-      image:
-        "https://media.licdn.com/dms/image/D5603AQHyWlv_2MTKBg/profile-displayphoto-shrink_800_800/0/1699649502236?e=1705536000&v=beta&t=aVuxo3G7UT3sFgqGJ71Wk8YtgTZfef4vdc-Lk5wSZNk",
-      role: "Full Stack Web Dev",
-      expertise: [
-        "Frontend Dev",
-        "Backend Dev",
-        "Project Manager",
-        "Database Engineer",
-      ],
-      karma: 7000,
-      links: 389,
-      mail: "adrin7113@gmail.com",
-    },
-    {
-      id: 6,
-      name: "Adrin Jose C T 6",
-      image:
-        "https://media.licdn.com/dms/image/D5603AQHyWlv_2MTKBg/profile-displayphoto-shrink_800_800/0/1699649502236?e=1705536000&v=beta&t=aVuxo3G7UT3sFgqGJ71Wk8YtgTZfef4vdc-Lk5wSZNk",
-      role: "Full Stack Web Dev",
-      expertise: [
-        "Frontend Dev",
-        "Backend Dev",
-        "Project Manager",
-        "Database Engineer",
-      ],
-      karma: 8000,
-      links: 389,
-      mail: "adrin7113@gmail.com",
+      id: "1224",
+      descriptor: {
+        name: "Mayank Bansal 4",
+        short_desc:
+          "Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ",
+        long_desc:
+          "Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.",
+        media: [
+          {
+            mimetype: "application/pdf",
+            url: "https://www.resume-link.com",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/1",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/2",
+          },
+        ],
+        images: [
+          {
+            url: "https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4",
+          },
+        ],
+      },
     },
   ]);
-  const tempData = [
+  let tempData = [
     {
-      id: 1,
-      name: "Adrin Jose C T",
-      image:
-        "https://media.licdn.com/dms/image/D5603AQHyWlv_2MTKBg/profile-displayphoto-shrink_800_800/0/1699649502236?e=1705536000&v=beta&t=aVuxo3G7UT3sFgqGJ71Wk8YtgTZfef4vdc-Lk5wSZNk",
-      role: "Full Stack Web Dev",
-      expertise: [
-        "Frontend Dev",
-        "Backend Dev",
-        "Project Manager",
-        "Database Engineer",
-      ],
-      karma: 3000,
-      links: 389,
-      mail: "adrin7113@gmail.com",
+      id: "1224",
+      descriptor: {
+        name: "Mayank Bansal",
+        short_desc:
+          "Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ",
+        long_desc:
+          "Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.",
+        media: [
+          {
+            mimetype: "application/pdf",
+            url: "https://www.resume-link.com",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/1",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/2",
+          },
+        ],
+        images: [
+          {
+            url: "https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4",
+          },
+        ],
+      },
     },
     {
-      id: 2,
-      name: "Adrin Jose C T 2",
-      image:
-        "https://media.licdn.com/dms/image/D5603AQHyWlv_2MTKBg/profile-displayphoto-shrink_800_800/0/1699649502236?e=1705536000&v=beta&t=aVuxo3G7UT3sFgqGJ71Wk8YtgTZfef4vdc-Lk5wSZNk",
-      role: "Full Stack Web Dev",
-      expertise: [
-        "Frontend Dev",
-        "Backend Dev",
-        "Project Manager",
-        "Database Engineer",
-      ],
-      karma: 4000,
-      links: 389,
-      mail: "adrin7113@gmail.com",
+      id: "1224",
+      descriptor: {
+        name: "Mayank Bansal 2",
+        short_desc:
+          "Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ",
+        long_desc:
+          "Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.",
+        media: [
+          {
+            mimetype: "application/pdf",
+            url: "https://www.resume-link.com",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/1",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/2",
+          },
+        ],
+        images: [
+          {
+            url: "https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4",
+          },
+        ],
+      },
     },
     {
-      id: 3,
-      name: "Adrin Jose C T 3",
-      image:
-        "https://media.licdn.com/dms/image/D5603AQHyWlv_2MTKBg/profile-displayphoto-shrink_800_800/0/1699649502236?e=1705536000&v=beta&t=aVuxo3G7UT3sFgqGJ71Wk8YtgTZfef4vdc-Lk5wSZNk",
-      role: "Full Stack Web Dev",
-      expertise: [
-        "Frontend Dev",
-        "Backend Dev",
-        "Project Manager",
-        "Database Engineer",
-      ],
-      karma: 5000,
-      links: 389,
-      mail: "adrin7113@gmail.com",
+      id: "1224",
+      descriptor: {
+        name: "Mayank Bansal 3",
+        short_desc:
+          "Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ",
+        long_desc:
+          "Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.",
+        media: [
+          {
+            mimetype: "application/pdf",
+            url: "https://www.resume-link.com",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/1",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/2",
+          },
+        ],
+        images: [
+          {
+            url: "https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4",
+          },
+        ],
+      },
     },
     {
-      id: 4,
-      name: "Adrin Jose C T 4",
-      image:
-        "https://media.licdn.com/dms/image/D5603AQHyWlv_2MTKBg/profile-displayphoto-shrink_800_800/0/1699649502236?e=1705536000&v=beta&t=aVuxo3G7UT3sFgqGJ71Wk8YtgTZfef4vdc-Lk5wSZNk",
-      role: "Full Stack Web Dev",
-      expertise: [
-        "Frontend Dev",
-        "Backend Dev",
-        "Project Manager",
-        "Database Engineer",
-      ],
-      karma: 6000,
-      links: 389,
-      mail: "adrin7113@gmail.com",
-    },
-    {
-      id: 5,
-      name: "Adrin Jose C T 5",
-      image:
-        "https://media.licdn.com/dms/image/D5603AQHyWlv_2MTKBg/profile-displayphoto-shrink_800_800/0/1699649502236?e=1705536000&v=beta&t=aVuxo3G7UT3sFgqGJ71Wk8YtgTZfef4vdc-Lk5wSZNk",
-      role: "Full Stack Web Dev",
-      expertise: [
-        "Frontend Dev",
-        "Backend Dev",
-        "Project Manager",
-        "Database Engineer",
-      ],
-      karma: 7000,
-      links: 389,
-      mail: "adrin7113@gmail.com",
-    },
-    {
-      id: 6,
-      name: "Adrin Jose C T 6",
-      image:
-        "https://media.licdn.com/dms/image/D5603AQHyWlv_2MTKBg/profile-displayphoto-shrink_800_800/0/1699649502236?e=1705536000&v=beta&t=aVuxo3G7UT3sFgqGJ71Wk8YtgTZfef4vdc-Lk5wSZNk",
-      role: "Full Stack Web Dev",
-      expertise: [
-        "Frontend Dev",
-        "Backend Dev",
-        "Project Manager",
-        "Database Engineer",
-      ],
-      karma: 8000,
-      links: 389,
-      mail: "adrin7113@gmail.com",
+      id: "1224",
+      descriptor: {
+        name: "Mayank Bansal 4",
+        short_desc:
+          "Product Manager || Enabling Reconciliation & Settlement framework on ONDC || Financial Services || Retail ",
+        long_desc:
+          "Entrepreneurial journey from failed startup to thriving tech ventures. Expertise in software development, blockchain, and B2B solutions. Currently contributing to FIDE at Enterprise Minds.",
+        media: [
+          {
+            mimetype: "application/pdf",
+            url: "https://www.resume-link.com",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/1",
+          },
+          {
+            mimetype: "application/pdf",
+            url: "https://www.certificate-link.com/2",
+          },
+        ],
+        images: [
+          {
+            url: "https://media.licdn.com/dms/image/C4E03AQEQLnpcjmWwGQ/profile-displayphoto-shrink_400_400/0/1638454324563?e=1705536000&v=beta&t=NBLbRWXya0YrMWsfWY8PCbfFW7msDBpiYzxpcbh9fA4",
+          },
+        ],
+      },
     },
   ];
-  useEffect(() => {
-    setJobSeekers(
-      tempData.filter((value) => {
-        return value.karma >= filters.karma;
-      })
-    );
-  }, [filters]);
+  // useEffect(() => {
+  //   setJobSeekers(
+  //     tempData.filter((value) => {
+  //       return value.karma >= filters.karma;
+  //     })
+  //   );
+  // }, [filters]);
+
+  const [search, setSearch] = useState("");
+
+  function handleSubmit() {
+    let value = fetch(`Whatever the url is`, {
+      method: "POST",
+      body: JSON.stringify({
+        search: search,
+      }),
+    });
+    value = value.responses[0].message.catalog.providers[0].items;
+    setJobSeekers(value);
+  }
 
   return (
     <div className="min-h-screen flex flex-col items-center">
       <Navbar />
       <div className="w-1/2 relative">
         <input
+          onChange={(e) => setSearch(e.target.value)}
           type="text"
           className="focus:outline-none p-5 mono text-xl w-full my-6 h-[75px] border rounded-full"
           placeholder="Search Skillsets..."
         />
-        <div className="cursor-pointer absolute top-9 right-10 rounded-full flex justify-between p-5 items-center bg-[#EDEDED] w-[150px] h-[50px]">
+        <div
+          onClick={() => {}}
+          className="cursor-pointer absolute top-9 right-10 rounded-full flex justify-between p-5 items-center bg-[#EDEDED] w-[150px] h-[50px]"
+        >
           Search
           <img
             src="/landing/search.png"
@@ -239,22 +296,22 @@ const Search = () => {
             >
               <div className="w-1/2 h-full flex flex-col gap-5 justify-center items-center">
                 <img
-                  src={value.image}
-                  alt={`A picture of ${value.name}`}
+                  src={value.descriptor.images[0].url}
+                  alt={`A picture of ${value.descriptor.name}`}
                   className="rounded-full w-28 h-28"
                 />
-                <h1 className="text-lg mono">Karma: {value.karma}🔥</h1>
-                <h1 className="text-lg mono">Links: {value.links}</h1>
+                <h1 className="text-lg mono">Karma: 3000K🔥</h1>
+                <h1 className="text-lg mono">Links: 200</h1>
               </div>
               <div className="w-1/2 h-full flex flex-col justify-around items-center">
                 <div>
-                  <h1 className="text-xl font-bold mono">{value.name}</h1>
-                  <h1 className="text-lg fmono">{value.role}</h1>
-                  <ul className="flex flex-col justify-start text-sm list-disc">
-                    {value.expertise.map((value1, index1) => (
-                      <li key={index1}>{value1}</li>
-                    ))}
-                  </ul>
+                  <h1 className="text-xl font-bold mono">
+                    {value.descriptor.name}
+                  </h1>
+                  <h1 className="text-lg fmono">
+                    {value.descriptor.short_desc.split("||")[0]}
+                  </h1>
+                  <p className="text-sm">{value.descriptor.long_desc}</p>
                 </div>
                 <button className="mx-auto mr-5 bg-black text-white hover:bg-white border-2 hover:border-black  hover:text-black transition-all ease-in-out duration-500 w-[125px] h-[50px] rounded-full">
                   Contact
